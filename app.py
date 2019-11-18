@@ -29,12 +29,12 @@ class AnimationPi():
         self.pi = 0
             
         box1_mass = 1
-        box2_mass = 1
+        box2_mass = 10000
     
        
         position_x = self.windows_size // 1.5
-        self.box = Square(100, position_x, 30, 30, self.windows_size, box1_mass, "red")
-        self.box2 = Square(250, position_x, 30, 30, self.windows_size,box2_mass, "blue")
+        self.box = Square(450, position_x, 30, 30, self.windows_size, box1_mass, "red")
+        self.box2 = Square(500, position_x, 30, 30, self.windows_size,box2_mass, "blue")
         self.box2.velocity = -1
         #size of the windows to play the game
         self.win = pygame.display.set_mode((self.windows_size, self.windows_size))
